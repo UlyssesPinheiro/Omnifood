@@ -58,8 +58,9 @@ default: 9px
   --color-shade-1: #cf711f;
   --color-grey1: #333;
   --color-grey2: #555;
-  --color-grey3: #999;
-  --color-grey4: #ddd;
+  --color-grey3: #6f6f6f;
+  --color-grey4: #999;
+  --color-grey5: #ddd;
 
   --border-radius-default: 9px;
 
@@ -222,7 +223,7 @@ body {
   font-weight: var(--font-w-medium);
   text-align: center;
   margin-bottom: 2.4rem;
-  color: var(--color-grey3);
+  color: var(--color-grey4);
 }
 
 .logos {
@@ -248,7 +249,7 @@ body {
 .step-number {
   font-size: 8.6rem;
   font-weight: var(--font-w-semi-bold);
-  color: var(--color-grey4);
+  color: var(--color-grey5);
   margin-bottom: 1.2rem;
 }
 
@@ -391,4 +392,62 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+}
+
+/* ============================ */
+/* MEALS SECTION */
+/* ============================ */
+
+.section-testimonials {
+  background-color: var(--color-tint-1);
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 400ms;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
 }
