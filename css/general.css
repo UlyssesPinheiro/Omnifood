@@ -6,11 +6,17 @@
   --color-primary: #e67e22;
   --color-tint-1: #fdf2e9;
   --color-tint-2: #fae5d3;
+  --color-tint-8: #eb984e;
+  --color-tint-9: #e98b38;
   --color-shade-1: #cf711f;
+  --color-shade-7: #45260a;
+  --color-shade-5: #733f11;
+  --color-yellow-1: #ffd43b;
   --color-grey1: #333;
   --color-grey2: #555;
-  --color-grey3: #999;
-  --color-grey4: #ddd;
+  --color-grey3: #6f6f6f;
+  --color-grey4: #999;
+  --color-grey5: #ddd;
 
   --border-radius-default: 9px;
 
@@ -128,6 +134,19 @@
   box-shadow: inset 0 0 0 3px white;
 }
 
+.btn-form {
+  background-color: var(--color-shade-8);
+  color: var(--color-tint-1);
+  transition: all 300ms;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btn-form:hover {
+  background-color: var(--color-shade-5);
+  color: var(--color-tint-1);
+}
+
 .link:link,
 .link:visited {
   color: var(--color-primary);
@@ -158,6 +177,11 @@
   display: flex;
   align-items: center;
   gap: 1.6rem;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(235, 151, 78, 0.5);
 }
 
 /* HELPER/SETTINGS CLASSES */
