@@ -65,6 +65,7 @@ default: 9px
   --color-grey3: #6f6f6f;
   --color-grey4: #999;
   --color-grey5: #ddd;
+  --color-grey6: #eee;
 
   --border-radius-default: 9px;
 
@@ -540,7 +541,7 @@ body {
 /* ============================ */
 
 .section-cta {
-  padding: var(--section-padding);
+  padding: 4.8rem 0 12.8rem;
 }
 
 .cta {
@@ -625,4 +626,83 @@ body {
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(250, 229, 211, 0.5);
+}
+
+/* ============================ */
+/* FOOTER SECTION */
+/* ============================ */
+
+.footer {
+  border-top: 1px solid var(--color-grey6);
+  padding: 12.8rem 0;
+}
+
+.footer-grid {
+  grid-template-columns: 1.5fr 1.5fr repeat(3, 1fr);
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links ion-icon {
+  font-size: 2.4rem;
+  color: var(--color-grey3);
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: var(--color-grey3);
+  margin-top: auto;
+  line-height: 1.6;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+.contacts p:first-child {
+  margin-bottom: 2.4rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: var(--font-w-medium);
+  margin-bottom: 4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.address-col a,
+.address-col p,
+.footer-nav li a:link,
+.footer-nav li a:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--color-grey3);
+  transition: all 300ms;
+}
+
+.address-col a:hover,
+.address-col p:hover,
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: var(--color-grey2);
 }
