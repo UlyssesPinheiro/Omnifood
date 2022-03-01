@@ -121,7 +121,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -381,7 +381,7 @@ body {
 }
 
 /* ============================ */
-/* MEALS SECTION */
+/* TESTIMONIALS SECTION */
 /* ============================ */
 
 .section-testimonials {
@@ -439,7 +439,7 @@ body {
 }
 
 /* ============================ */
-/* MEALS SECTION */
+/* PRICING SECTION */
 /* ============================ */
 
 .section-pricing {
@@ -533,7 +533,7 @@ body {
 }
 .feature-text {
   font-size: 1.8rem;
-  line-height: 1.8rem;
+  line-height: 1.8;
 }
 
 /* ============================ */
@@ -555,7 +555,7 @@ body {
   );
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
-  height: 50rem;
+  /* height: 50rem; */
   overflow: hidden;
 }
 .cta-text-box {

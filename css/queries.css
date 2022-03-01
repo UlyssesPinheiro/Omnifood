@@ -1,0 +1,184 @@
+/* 
+--- TYPOGRAPHY SYSTEM
+
+  - Font Size System (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+  - Font Weights:
+  Default: 400
+  Medium: 500
+  Semi-bold: 600
+  Bold: 700
+
+  - Line heights:
+  Default: 1
+  Small: 1.05
+  Medium: 1.2
+  Paragraph default: 1.6
+
+  letter-spacing: 0.75px;
+  letter-spacing: -0.5px;
+
+
+
+--- COLORS
+
+  - Primary: #e67e22
+  - Tints: #fdf2e9 #fae5d3
+  - Shades: #cf711f
+  - Accents: 
+  - Greys: #555 #333
+
+https://maketintsandshades.com/ 
+
+--- IMAGES
+
+https://unsplash.com/
+https://www.uifaces.co/
+
+--- SHADOWS
+
+
+--- BORDER RADIUS
+
+default: 9px
+1.1rem
+
+--- WHITESPACE
+
+  - Spacing System (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+:root {
+  --color-primary: #e67e22;
+  --color-tint-1: #fdf2e9;
+  --color-tint-2: #fae5d3;
+  --color-tint-8: #eb984e;
+  --color-tint-9: #e98b38;
+  --color-shade-1: #cf711f;
+  --color-shade-7: #45260a;
+  --color-shade-5: #733f11;
+  --color-yellow-1: #ffd43b;
+  --color-grey1: #333;
+  --color-grey2: #555;
+  --color-grey3: #6f6f6f;
+  --color-grey4: #999;
+  --color-grey5: #ddd;
+
+  --border-radius-default: 9px;
+
+  --font-w-default: 400;
+  --font-w-medium: 500;
+  --font-w-semi-bold: 600;
+  --font-w-bold: 700;
+
+  --section-padding: 9.6rem 0;
+}
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/* =============================== */
+/* BELLOW 1344px (Smaller desktops)*/
+/* =============================== */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallery-remove-4 {
+    display: none;
+  }
+}
+
+/* =============================== */
+/* BELLOW 1200px (Landscape Tablets)*/
+/* =============================== */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+/* =============================== */
+/* BELLOW 944px (Tablets portrait)*/
+/* =============================== */
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .section-hero {
+    text-align: center;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .hero-text-box {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .gallery-remove-4 {
+    display: block;
+  }
+  .gallery-remove-2 {
+    display: none;
+  }
+  .list-item {
+    line-height: 1.2;
+  }
+  .cta {
+    grid-template-columns: 55fr 45fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .btn-form {
+    margin-top: 1.2rem;
+  }
+}
