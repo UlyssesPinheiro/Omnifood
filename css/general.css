@@ -32,6 +32,9 @@
   display: grid;
   gap: 9.6rem 6.4rem;
 }
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
 
 .grid-center-align {
   align-items: center;
@@ -86,6 +89,7 @@
 
 .btn:link,
 .btn:visited {
+  display: inline-block;
   background-color: var(--color-primary);
   font-size: 2rem;
   font-weight: var(--font-w-semi-bold);
@@ -100,6 +104,7 @@
 
 .btn-full:link,
 .btn-full:visited {
+  display: inline-block;
   background-color: var(--color-primary);
   color: white;
 }
@@ -134,6 +139,25 @@
 .link:active {
   color: var(--color-shade-1);
   border-bottom: 1px solid transparent;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.list-icon {
+  font-size: 2.6rem;
+  color: var(--color-shade-1);
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 /* HELPER/SETTINGS CLASSES */
