@@ -464,8 +464,10 @@ body {
   padding: var(--section-padding);
 }
 .pricing-plan {
+  position: relative;
   border-radius: 11px;
   padding: 4.8rem;
+  padding-bottom: 14rem;
   width: 75%;
 }
 .pricing-plan-starter {
@@ -522,7 +524,14 @@ body {
 
 .plan-sign-up {
   text-align: center;
-  margin-top: 2.6rem;
+  position: absolute;
+  width: 65%;
+  bottom: 4.8rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+.list-grayed-out {
+  opacity: 40%;
 }
 
 /* ============================ */

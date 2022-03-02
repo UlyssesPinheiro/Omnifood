@@ -247,6 +247,15 @@ default: 9px
   .heading-secondary {
     margin-bottom: 4.8rem;
   }
+  .hero-text-box {
+    width: 100%;
+  }
+  .hero-description {
+    align-self: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .logos {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -265,6 +274,17 @@ default: 9px
     grid-row: 2;
     grid-column: span 3;
   }
+  .step-imgs {
+    width: 55%;
+  }
+  .step-img-box::before {
+    width: 80%;
+    padding-bottom: 80%;
+  }
+  .step-img-box::after {
+    width: 65%;
+    padding-bottom: 65%;
+  }
   .pricing-plan {
     width: 100%;
   }
@@ -282,7 +302,94 @@ default: 9px
     grid-row: 2;
     grid-column: span 3;
   }
-  /* .cta {
+}
+
+/* =============================== */
+/* BELLOW 544px (Smartphones)*/
+/* =============================== */
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid-2cols,
+  .grid-3cols,
+  .grid-4cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .section-hero {
+    padding: 2.4rem 0 6.4rem;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .hero-description {
+    width: 100%;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .logos {
+    grid-template-columns: 1fr 1fr;
+  }
+  .logos-first3-mobile {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  .logos-last2-mobile {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  .logos-last1-mobile {
+    grid-column: span 2;
+  }
+  .step-imgs {
+    width: 45%;
+  }
+  .step-img-box::after {
+    width: 60%;
+    padding-bottom: 60%;
+  }
+  .step-img-box:nth-child(3) {
+    grid-row: 4;
+  }
+  .step-img-box {
+    transform: translateY(-2.4rem);
+  }
+  .feature {
+    text-align: center;
+  }
+  .meal:hover {
+    transform: none;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  }
+  .testimonials {
     grid-template-columns: 1fr;
-  } */
+    gap: 5.6rem;
+  }
+  .testimonial-text {
+    margin-bottom: 1rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .gallery-remove-2 {
+    display: block;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-img-box {
+    height: 34rem;
+    grid-row: 1;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
 }
