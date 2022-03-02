@@ -115,6 +115,7 @@ default: 9px
   }
   .header {
     padding: 0 3.2rem;
+    height: 8rem;
   }
   .main-nav-list {
     gap: 3.2rem;
